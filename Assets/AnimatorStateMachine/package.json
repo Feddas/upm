@@ -1,0 +1,21 @@
+{
+    "name": "com.feddas.animatorstatemachine",
+    "displayName": "Animator State Machine",
+    "version": "0.0.1",
+    "unity": "2019.2",
+    "description": "Hooks into a Unity Animator to display and transition between game states.",
+    "author": "Feddas <not@given.com> (https://shawn.featherly.net)",
+    "homepage": "https://github.com/feddas/upm/tree/master/Assets/AnimatorStateMachine/",
+    "repository": "git://github.com/feddas/upm.git",
+    "category": "",
+    "keywords": [
+        "architecture"
+    ],
+    "samples": [
+        {
+            "displayName": "Usage Example",
+            "description": "Basic example usages of Animator State Machine",
+            "path": "Samples~/Example"
+        }
+    ]
+}
