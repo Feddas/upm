@@ -1,0 +1,15 @@
+{
+    "name": "com.feddas.versionit",
+    "displayName": "Version It",
+    "version": "0.1.4",
+    "unity": "2018.2",
+    "category": "",
+    "description": "Semantic version all the things",
+    "author": "Feddas <not@given.com> (https://shawn.featherly.net)",
+    "homepage": "https://github.com/Feddas/upm/blob/master/Assets/VersionIt/",
+    "dependencies": {},
+    "keywords": [
+        "versioning"
+    ],
+    "samples": []
+}
