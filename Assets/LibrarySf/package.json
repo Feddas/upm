@@ -1,0 +1,17 @@
+{
+    "name": "com.feddas.librarysf",
+    "displayName": "Library Sf",
+    "version": "0.0.3",
+    "unity": "2018.2",
+    "category": "",
+    "description": "Small generic utilities Shawn F likes to use in Unity projects. i.e. PropertyDrawers & components for comments",
+    "author": "Feddas <not@given.com> (https://shawn.featherly.net)",
+    "homepage": "https://github.com/Feddas/upm/tree/master/Assets/LibrarySf/",
+    "repository": "git://github.com/Feddas/upm.git",
+    "dependencies": {},
+    "keywords": [
+        "Library",
+        "Utility"
+    ],
+    "samples": []
+}

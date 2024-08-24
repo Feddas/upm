@@ -11,22 +11,17 @@ VersionIt has a button to increment only the z section of the verison number. Th
 
 # Setup
 
-### Installation by Git
+Reference this package in your Unity project by either:
 
-These steps require Unity 2018.3.0 or greater. The steps below are not tested but should work according to https://docs.unity3d.com/Manual/upm-git.html <!-- was https://forum.unity.com/threads/git-support-on-package-manager.573673/#post-3819487 -->
-
-1. Modify your projects Packages/manifest.json to include this package.
-
+1. Modifying your projects `Packages/manifest.json` file to include this package subfolder as shown below. ([ref](https://docs.unity3d.com/Manual/upm-git.html#subfolder))
 ```
-{
-  "dependencies": {
-    "com.feddas.versionit": "https://github.com/Feddas/upm.git?path=/Assets/VersionIt",
-    ...
-  }
+"dependencies": {
+  "com.feddas.versionit": "https://github.com/Feddas/upm.git?path=/Assets/VersionIt",
+  ...
 }
 ```
 
-2. Start Unity
+2. Or add `https://github.com/Feddas/upm.git?path=/Assets/VersionIt` by using the [PackageManager UI](https://docs.unity3d.com/Manual/upm-ui-giturl.html). Optionally, for stability, you can [specify the exact revision using the latest commit hash at the end of the added URL](https://docs.unity3d.com/Manual/upm-git.html#revision).
 
 ### Getting started
 

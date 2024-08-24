@@ -1,24 +1,28 @@
 # Goal
 
-Unity project serving as a git registry for personal UPM packages.
+Unity project serving as a git subfolders based npm registry for personal UPM packages.
 
 # Usage
 
-These packages can be referenced in a Unity project by using https://docs.unity3d.com/Manual/upm-git.html [ui](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
+These packages can be referenced in a Unity project by modifying [package.json directly](https://docs.unity3d.com/Manual/upm-git.html#subfolder) or with the [PackageManager UI](https://docs.unity3d.com/Manual/upm-ui-giturl.html)
 
 # Package List
 
-## [Animator StateMachine](Assets/AnimatorStateMachine/)
+## [Animator State Machine](Assets/AnimatorStateMachine/)
 
 Hooks into a Unity Animator to display and transition between game states.
 
-## [Versioning](Assets/VersionIt/)
+## [Library SF](Assets/LibrarySf/)
 
-Syncs the Unity build settings project version outside of the UnityEditor.
+Miscellaneous generic utility scripts & PropertyDrawers Shawn Featherly likes to use in Unity projects.
 
 ## [ScriptableObject architecture](https://github.com/Feddas/SoArchitecture)
 
 Adds payload events to Ryan Hippies Unite talk.
+
+## [Versioning](Assets/VersionIt/)
+
+Syncs the Unity build settings project version outside of the UnityEditor.
 
 # Development
 
@@ -29,7 +33,7 @@ Use a [symbolic link](https://forum.unity.com/threads/samples-in-packages-manual
 
 If you create a new sample, [modify package.json](https://docs.unity3d.com/2021.2/Documentation/Manual/cus-samples.html).
 
-<!-- TODO: Scene variable, Toggle UI, Image Crop -->
+<!-- TODO: Toggle UI, Image Crop -->
 
 # Repo
 

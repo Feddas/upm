@@ -1,0 +1,12 @@
+{
+    "name": "EditorLibrarySf",
+    "references": [
+        "LibrarySf"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

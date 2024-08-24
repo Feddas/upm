@@ -6,7 +6,8 @@
     "category": "",
     "description": "Semantic version all the things",
     "author": "Feddas <not@given.com> (https://shawn.featherly.net)",
-    "homepage": "https://github.com/Feddas/upm/blob/master/Assets/VersionIt/",
+    "homepage": "https://github.com/Feddas/upm/tree/master/Assets/VersionIt/",
+    "repository": "git://github.com/Feddas/upm.git",
     "dependencies": {},
     "keywords": [
         "versioning"
