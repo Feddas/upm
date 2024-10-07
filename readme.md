@@ -12,6 +12,10 @@ These packages can be referenced in a Unity project by modifying [package.json d
 
 Hooks into a Unity Animator to display and transition between game states.
 
+## [CropImage](Assets/CropImage/)
+
+Quickly test cropping an image without modifying that image. Allows other image references to retain the uncropped image.
+
 ## [Library SF](Assets/LibrarySf/)
 
 Miscellaneous generic utility scripts & PropertyDrawers Shawn Featherly likes to use in Unity projects.
@@ -19,6 +23,10 @@ Miscellaneous generic utility scripts & PropertyDrawers Shawn Featherly likes to
 ## [ScriptableObject architecture](https://github.com/Feddas/SoArchitecture)
 
 Adds payload events to Ryan Hippies Unite talk.
+
+## [SwapActive](Assets/SwapActive/)
+
+Swap active gameobjects based on the value of a custom enum.
 
 ## [Versioning](Assets/VersionIt/)
 
@@ -32,8 +40,6 @@ Use a [symbolic link](https://forum.unity.com/threads/samples-in-packages-manual
 <!-- another option is with github actions https://medium.com/openupm/how-to-maintain-upm-package-part-1-7b4daf88d4c4#236a -->
 
 If you create a new sample, [modify package.json](https://docs.unity3d.com/2021.2/Documentation/Manual/cus-samples.html).
-
-<!-- TODO: Toggle UI, Image Crop -->
 
 # Repo
 

@@ -1,0 +1,14 @@
+{
+    "name": "com.feddas.cropimage",
+    "displayName": "CropImage at runtime",
+    "version": "0.0.2",
+    "unity": "2021.3",
+    "description": "Runtime image cropping. Either on-demand or preloading by storing the reference to a completed image as a sprite in a ScriptableObject.",
+    "author": "Feddas <not@given.com> (https://shawn.featherly.net)",
+    "homepage": "https://github.com/Feddas/upm/tree/master/Assets/CropImage/",
+    "repository": "https://github.com/Feddas/upm.git",
+    "category": "",
+    "keywords": [
+        ""
+    ]
+}

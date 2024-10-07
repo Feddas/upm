@@ -1,0 +1,21 @@
+{
+    "name": "com.feddas.swapactive",
+    "displayName": "Swap Active",
+    "version": "0.0.1",
+    "unity": "2021.3",
+    "description": "Swap active gameobjects based on the value of a custom enum.",
+    "author": "Feddas <not@given.com> (https://shawn.featherly.net)",
+    "homepage": "https://github.com/Feddas/upm/tree/master/Assets/SwapActive/",
+    "repository": "https://github.com/Feddas/upm.git",
+    "category": "",
+    "keywords": [
+        ""
+    ],
+    "samples": [
+        {
+            "displayName": "Usage Example",
+            "description": "Basic example usages of Swap Active",
+            "path": "Samples~/Example"
+        }
+    ]
+}
