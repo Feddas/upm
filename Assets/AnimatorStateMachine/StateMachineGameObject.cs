@@ -1,5 +1,3 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -41,12 +39,12 @@ public abstract class StateMachineGameObject<TStateInterop> : MonoBehaviour
         this.DisableAllStateBehaviours();
     }
 
-    public static IEnumerable<GameStateBehaviour<TStateInterop>> GetStateBehaviours(Animator animator)
+    public static IEnumerable<StateMachineAnimatorState<TStateInterop>> GetStateBehaviours(Animator animator)
     {
         StateMachineBehaviour[] behaviours = animator.GetBehaviours<StateMachineBehaviour>();
         foreach (StateMachineBehaviour behaviour in behaviours)
         {
-            GameStateBehaviour<TStateInterop> stateBehaviour = behaviour as GameStateBehaviour<TStateInterop>;
+            StateMachineAnimatorState<TStateInterop> stateBehaviour = behaviour as StateMachineAnimatorState<TStateInterop>;
             if (stateBehaviour == null)
             {
                 continue;
@@ -58,7 +56,7 @@ public abstract class StateMachineGameObject<TStateInterop> : MonoBehaviour
 
     public void ConfigureAllStateBehaviours()
     {
-        foreach (GameStateBehaviour<TStateInterop> behaviour in GetStateBehaviours(animator))
+        foreach (StateMachineAnimatorState<TStateInterop> behaviour in GetStateBehaviours(animator))
         {
             behaviour.InitializeWithContext(animator, this as TStateInterop);
         }
@@ -66,7 +64,7 @@ public abstract class StateMachineGameObject<TStateInterop> : MonoBehaviour
 
     public void DisableAllStateBehaviours()
     {
-        foreach (GameStateBehaviour<TStateInterop> behaviour in GetStateBehaviours(animator))
+        foreach (StateMachineAnimatorState<TStateInterop> behaviour in GetStateBehaviours(animator))
         {
             behaviour.Disable();
         }
@@ -74,7 +72,7 @@ public abstract class StateMachineGameObject<TStateInterop> : MonoBehaviour
 
     public void EnableAllStateBehaviours()
     {
-        foreach (GameStateBehaviour<TStateInterop> behaviour in GetStateBehaviours(animator))
+        foreach (StateMachineAnimatorState<TStateInterop> behaviour in GetStateBehaviours(animator))
         {
             behaviour.Enable();
         }

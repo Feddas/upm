@@ -1,8 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class ExampleStateChangesText : GameStateBehaviour<ExampleAnimatorStateMachine>
+/// <summary>
+/// This script defines HOW the state (a state in an Animator) will manipulate gameobjects during the lifecyle of this state.
+/// </summary>
+public class ExampleStateChangesText : StateMachineAnimatorState<ExampleStateBridgeToText>
 {
     [SerializeField]
     private string UiText = null;
@@ -10,6 +11,7 @@ public class ExampleStateChangesText : GameStateBehaviour<ExampleAnimatorStateMa
     // OnStateEnter is called when a transition starts and the state machine starts to evaluate this state
     override protected void OnStateEntered()
     {
+        // manipulate gameobject
         stateMachine.Console.text = UiText;
     }
 
@@ -19,9 +21,10 @@ public class ExampleStateChangesText : GameStateBehaviour<ExampleAnimatorStateMa
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override protected void OnStateExited()
     {
-        if (stateMachine.Console != null)
+        if (stateMachine.Console != null) // skip if Application.Quit or OnDestroy
         {
-            stateMachine.Console.text = "Exited state #" + currentNameHash + ".";
+            // Record telemetry event
+            Debug.Log(Time.realtimeSinceStartup + " Exited state #" + currentNameHash);
         }
     }
 }
